@@ -1,0 +1,72 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>Service</title>
+        <link rel="stylesheet" href="./css/style.css">
+        </head>
+        <body>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a class="active" href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+            </ul>
+
+            <article>   
+                <h2>What are Web Services?</h2>
+                <p>
+                    Different books and different organizations provide different definitions to Web Services.
+                </p>
+                <ul class="list">
+                    <li><p>A web service is any piece of software that makes itself available over the internet and uses a standardized XML messaging system. XML is used to encode all communications to a web service. For example, a client invokes a web service by sending an XML message, then waits for a corresponding XML response. As all communication is in XML, web services are not tied to any one operating system or programming language—Java can talk with Perl; Windows applications can talk with Unix applications.</p></li>
+                    <li><p>Web services are self-contained, modular, distributed, dynamic applications that can be described, published, located, or invoked over the network to create products, processes, and supply chains. These applications can be local, distributed, or web-based. Web services are built on top of open standards such as TCP/IP, HTTP, Java, HTML, and XML.</p></li>
+                    <li><p>Web services are XML-based information exchange systems that use the Internet for direct application-to-application interaction. These systems can include programs, objects, messages, or documents.</p></li>
+                    <li><p>A web service is a collection of open protocols and standards used for exchanging data between applications or systems. Software applications written in various programming languages and running on various platforms can use web services to exchange data over computer networks like the Internet in a manner similar to inter-process communication on a single computer. This interoperability (e.g., between Java and Python, or Windows and Linux applications) is due to the use of open standards.</p></li>
+                    </ul>
+                    <p>To summarize, a complete web service is, therefore, any service that &minus;</p>
+                    <ul class="list">
+                    <li><p>Is available over the Internet or private (intranet) networks</p></li>
+                    <li><p>Uses a standardized XML messaging system</p></li>
+                    <li><p>Is not tied to any one operating system or programming language</p></li>
+                    <li><p>Is self-describing via a common XML grammar</p></li>
+                    <li><p>Is discoverable via a simple find mechanism</p></li>
+                    </ul>
+                    <h2>Components of Web Services</h2>
+                    <p>The basic web services platform is XML &plus; HTTP. All the standard web services work using the following components &minus;</p>
+                    <ul class="list">
+                    <li><p>SOAP (Simple Object Access Protocol)</li>
+                    <li><p>UDDI (Universal Description, Discovery and Integration)</li>
+                    <li><p>WSDL (Web Services Description Language)</li>
+                    </ul>
+                    <p>All these components have been discussed in the <a href="/webservices/web_services_architecture.htm">Web Services Architecture</a> chapter.</p>
+                    <h2>How Does a Web Service Work?</h2>
+                    <p>A web service enables communication among various applications by using open standards such as HTML, XML, WSDL, and SOAP. A web service takes the help of &minus;</p>
+                    <ul class="list">
+                    <li><p>XML to tag the data</li>
+                    <li><p>SOAP to transfer a message</li>
+                    <li><p>WSDL to describe the availability of service.</li>
+                    </ul>
+                    <p>You can build a Java-based web service on Solaris that is accessible from your Visual Basic program that runs on Windows.</p>
+                    <p>You can also use C# to build new web services on Windows that can be invoked from your web application that is based on JavaServer Pages (JSP) and runs on Linux.</p>
+                    <h2>Example</h2>  
+                    <p>Consider a simple account-management and order processing system. The accounting personnel use a client application built with Visual Basic or JSP to create new accounts and enter new customer orders.</p>
+                    <p>The processing logic for this system is written in Java and resides on a Solaris machine, which also interacts with a database to store information.</p>
+                    <p>The steps to perform this operation are as follows &minus;</p>
+                    <ul class="list">
+                    <li><p>The client program bundles the account registration information into a SOAP message.</p></li> 
+                    <li><p>This SOAP message is sent to the web service as the body of an HTTP POST request.</p></li> 
+                    <li><p>The web service unpacks the SOAP request and converts it into a command that the application can understand.</p></li>
+                    <li><p>The application processes the information as required and responds with a new unique account number for that customer.</p></li>  
+                    <li><p>Next, the web service packages the response into another SOAP message, which it sends back to the client program in response to its HTTP request.</p></li>  
+                    <li><p>The client program unpacks the SOAP message to obtain the results of the account registration process.</p></li> 
+                    </ul>
+
+
+
+
+
+
+        </body>
+        </html>
